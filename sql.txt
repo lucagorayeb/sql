@@ -1,0 +1,8 @@
+- Cada coluna tem algumas informações sobre ela:
+
+-- Nome da coluna
+-- Tipo da coluna
+-- Tamanho da coluna
+-- Se a coluna aceita NULL (nulo)
+-- Valor padrão
+

@@ -6,3 +6,54 @@
 -- Se a coluna aceita NULL (nulo)
 -- Valor padrão
 
+- SELECT :
+
+-- O select é usado para ver os dados de uma ou mais tabelas.
+---- Exemplo: SELECT * FROM tabela_1;
+
+-- O select pode ser combinado com outros comandos para fazer
+   filtros melhores para os dados que querem ser encontrados.
+
+-- WHERE é um filtro que indica que algo tem que seguir certos
+   padrões como ser igual a algo, maior, menor e entre outros.
+
+-- Os operadores lógicos como AND e OR, operadores relacionais
+   como =, !=, >, <, >= e <=. Todos esses podem ser combinados para
+   fazer seleções mais restristas. (Todos devem ser conbinados com o where)
+
+-- LIKE é usado para fazer comparações, mas o mesmo é mais flexível
+   que os operadores relacionais e funciona somente para textos.
+   Por padrão o sql não é case sensitive, mas depende de qual está sendo utilizado.
+---- Exemplo de como o LIKE funciona:
+------- 'TEXTO%' -> Começa com TEXTO e continua.
+------- '%TEXTO' -> Termina com TEXTO.
+------- '%TEXTO%' -> Possui TEXTO no meio da frase.
+
+-- BETWEEN é usado como o próprio nome diz e restringe um range entre dois valores.
+   É um atalaho para o AND em alguns casos.
+
+-- IN é usado para verificar se algo está dentro de uma tabela atráves de uma lista.
+   Essa lista é feita por quem está fazendo a query e a lista fica entre parenteses.
+   É um atalho para o operador OR em algumas ocasiões.
+
+-- ORDER BY é usado para ordenar a saída do campo escolhido na ordem crescente (ASC)
+   ou na forma descrescente (DESC). Para não ocasionar erro de sintaxe todas as
+   condições devem ser colocadas antes da ordenação. Pode ordenar mais de um campo
+   por vez. Para fazer isso basta colocar uma vírgula e informar o campo e se vai ser
+   ASC ou DESC.
+
+-- LIMIT é usado para limitar a quantidade de resultados que é retornado da tabela.
+   É usado somente no final, após as condições e as ordenações. Também pode ser usado
+   para fazer paginação passando a quantidade de linhas que vai pular e quantos itens
+   vai exibir.
+
+-- COUNT(*) é usado para saber a quantidade de itens que tem naquelas condições.
+   Uma boa prática é colocar um atalho no nome desse count, como COUNT(*) AS contagem.
+---- Exemplo: SELECT COUNT(*) AS contagem FROM produtos;
+
+-- AVG() é usado para saber a média de algum item que está presente na tabela.
+
+-- SUM() é usado para fazer a soma de um determinado item da tabela.
+
+-- GROUP BY é utilizado para agrupar a query que foi passada em seus respectivos grupos
+

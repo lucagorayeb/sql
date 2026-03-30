@@ -57,3 +57,27 @@
 
 -- GROUP BY é utilizado para agrupar a query que foi passada em seus respectivos grupos
 
+-- JOIN é utilizado para entrelaçar informações de duas ou mais tabelas para exibir a informação.
+----- Diferença entre os JOINs:
+----- INNER -> Só retorna itens em que a duas tabelas tem registo.
+----- LEFT  -> Ele junta todos os registros da tabela da esquerda para a direita idenpendente se
+               a tabela da direita tem algum item relacionado.
+----- RIGHT -> Ele junta todos os registros da tabela da direita para a esquerda idenpendente se
+               a tabela da esquerda tem algum item relacionado a tabela da direita.
+
+- INSERT:
+
+-- Para inserir dados na tabela nós usamos o comando INSERT INTO nome_da_tabela (), dentro do
+   parênteses são passados os campos nós quais vão ser feitas as inserções. Após o parenteses
+   é passado a sintaxe VALUES e os valores que vão ser passados, os valores devem ser passados
+   de acordo com seu tipo que está na tabela.
+
+- UPDATE:
+
+-- Para atualizar algo usa-se o comando UPDATE nome_da_tabela SET informa o que quer alterar
+   WHERE informar onde se quer alterar;
+
+- DELETE:
+
+-- É um comando bem simples e é utilizado para deletar dados de uma tabela.
+   A sitaxe é DELETE FROM nome_da_tabela WHERE o que quer remover

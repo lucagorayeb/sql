@@ -1,2 +1,4 @@
 USE crm;
-SELECT id, nome FROM fornecedor WHERE nome != "Bia";
+SHOW TABLES;
+#SELECT * FROM produtos;
+DESC produtos;

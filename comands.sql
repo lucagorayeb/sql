@@ -1,0 +1,10 @@
+CREATE DATABASE lanchonete;
+
+USE lanchonete;
+
+CREATE TABLE produtos(
+id_produto INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(50) NOT NULL UNIQUE,
+preco FLOAT NOT NULL
+);
+
